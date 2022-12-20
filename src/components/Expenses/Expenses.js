@@ -18,12 +18,12 @@ const Expenses = (props) => {
 
   return (
     <div>
-      <ExpensesChart expenses = {filterExpenses}/>
       <Card className="expenses">
         <ExpenseFilter
           selected={filterYear}
           dropdownExpenseHandler={filterChangeHandler}
         />
+        <ExpensesChart expenses = {filterExpenses}/>
         <ExpensesList items={filterExpenses} />
       </Card>
     </div>
